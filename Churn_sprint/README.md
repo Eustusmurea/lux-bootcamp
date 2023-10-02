@@ -43,12 +43,15 @@ pandas_profiling.ProfileReport(pd.read_csv('Tel_Customer_Churn_Dataset.csv'))
 
 ### Number of Columns and Rows in the Dataset
 
+```python
 churn_dataset.shape
+```
 
 ### Convert String values (Yes and No) of Churn column to 1 and 0
-
+```python
 churn_dataset.loc[churn_dataset.Churn=='No','Churn'] = 0
 churn_dataset.loc[churn_dataset.Churn=='Yes','Churn'] = 1
+```
 
 ### Replace all the spaces with null values
 
